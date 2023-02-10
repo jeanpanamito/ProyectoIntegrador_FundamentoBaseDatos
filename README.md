@@ -1,0 +1,17 @@
+# ProyectoIntegrador_FundamentoBaseDatos
+<p>Este proyecto integrador que incluye el dataset "movie_dataset" se enfoca en la integración de técnicas de bases de datos 
+y programación funcional & reactiva para la extracción, transformación, carga y explotación de datos relacionados con películas. 
+
+<p>Este proyecto tiene como objetivo demostrar cómo se puede utilizar una combinación de tecnologías para 
+analizar y visualizar de manera eficiente información de películas, lo que puede ser útil para industrias relacionadas con el entretenimiento.
+
+* La extracción de datos implica recopilar información sobre películas desde fuentes externas, como bases de datos en línea o archivos de texto. 
+* <p>La transformación de datos incluye el procesamiento y la limpieza de los datos recopilados, con el fin de prepararlos para su carga en una base de datos. 
+* <p>La carga de datos implica la inserción de los datos transformados en una base de datos para su posterior uso. Por último, la explotación de datos implica el uso de herramientas de visualización y análisis para obtener información útil a partir de los datos cargados en la base de datos.
+
+En resumen, el proyecto de "movie_dataset" demuestra cómo se puede utilizar una combinación de tecnologías para analizar y visualizar información sobre películas de manera eficiente y fácil de usar.
+| $\textbf{Nombre Columna}$ | Index | budget | genres | homepage | id | keywords | original_language | original_title | overview | popularity | production_companies | production_countries | release_date | revenue | runtime | spoken_languages | status | tagline | title | vote_average | vote_count | cast | crew | director |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------| 
+| $\textbf{Tipo}$ | NUMERICO -> INT| NUMERICO -> LONG| STRING | STRING | NUMERICO -> INT | STRING | STRING | STRING | STRING | NUMERICO -> DOUBLE | STRING (JSON) | STRING (JSON) | STRING | NUMERICO -> DOUBLE | NUMERICO -> DOUBLE | STRING (JSON) | STRING | STRING | STRING  | NUMERICO -> DOUBLE | NUMERICO -> INT| STRING | STRING (JSON) | STRING |
+| $\textbf{Propósito}$ | Enumerar la cantidad de películas | Costo de la película | Géneros considerados | URL | Identificador único | Palabras clave | Lenguaje en el que fue grabada | Titulo con el que fue publicada | Resumen/Sinopsis | Veces reproducida | Compañías involucradas | Países involucrados | Fecha de lanzamiento | Ingresos generados | Duración del film | Lenguajes Doblados | Estado | Slogan breve | Titulo | Calificación | Personas que calificaron | Interpretes | Reparto | Director |
+| $\textbf{Observaciones}$ | Empieza en 0 | Hay valores en con 0 | Separados con espacio, science_fiction única con dos palabras | Hay valores en blanco | - | Conjunto de palabras sin un separador definido | Abreviatura ISO 639-1 | Cada película tiene un título original | Resumen único para cada película| - | {nombre de productora + ID} | {abreviatura + pais} | año-mes-dia | ganan mas de lo que invierten | Hay valores en cero | {abreviatura + nombre} (no todos poseen nombre) | Existen 3 estados | Su mayoría están en blanco | - | Sobre 10 | - | Nombres con caracteres especiales, sin separador definido | {nombre + genero + departamento + puesto + ID} | - |
